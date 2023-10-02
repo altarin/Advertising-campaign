@@ -1,5 +1,5 @@
 # Структура проекта:
-
+ ```
 ├── assets
 |   ├── images
 |   └── scss
@@ -13,4 +13,4 @@
 |       └── main.scss
 ├── .gitignore
 └── index.html
-
+ ```
