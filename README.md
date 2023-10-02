@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-# advertising_campaign
-=======
 # Структура проекта:
- ```
+
 ├── assets
 |   ├── images
 |   └── scss
@@ -16,5 +13,4 @@
 |       └── main.scss
 ├── .gitignore
 └── index.html
- ```
->>>>>>> 1e47003 (created project advertising campaign)
+
