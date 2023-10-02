@@ -1,1 +1,1 @@
-# altarin-advertising_campaigns
+# advertising_campaign
