@@ -1,0 +1,125 @@
+.contacts {
+    background-color: $white-shadowed;
+    padding: 80px 0;
+
+    .container {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+    }
+
+    &-form {
+        background-color: #fff;
+        padding: 50px 40px;
+        max-width: 445px;
+        border-radius: 8px;
+
+        @media (max-width: 1040px) {
+            max-width: calc(100%/2 - 40px);
+        }
+
+        @media (max-width: $mobile) {
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            @include input;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+
+            &:not(:last-of-type) {
+                margin-bottom: 15px;
+            }
+        }
+
+        button {
+            @include blueButton;
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        &__text {
+            color: #737373;
+            font-size: 12px;
+            line-height: 150%;
+            margin-top: 20px;
+        }
+    }
+
+    &-info {
+        background-color: #fff;
+        max-width: 540px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 1040px) {
+            max-width: 50%;
+        }
+
+        @media (max-width: $mobile) {
+            max-width: 100%;
+        }
+
+        &__item {
+            display: flex;
+            
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+
+            &-wrapper {
+                padding: 43px 50px 0;
+                margin-bottom: 42px;
+            }
+
+            &-icon {
+                width: 38px;
+                margin-right: 20px;
+                text-align: center;
+            }
+
+            &-content {
+
+                &-title {
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 140%;
+                    margin-bottom: 3px;
+                }
+
+                &-text {
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+
+    #map {
+       flex-grow: 1;
+
+       @media (max-width: $mobile) {
+            height: 300px;
+       }
+
+       iframe {
+           height: 100%;
+           max-width: 100%;
+       }
+    }
+}

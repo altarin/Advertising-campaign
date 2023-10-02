@@ -1,0 +1,15 @@
+@import './base/reset';
+@import './base/vars';
+@import './base/mixins';
+@import './base/base';
+
+/* blocks scss imports */
+@import './blocks/catalog';
+@import './blocks/partnership';
+@import './blocks/clients';
+@import './blocks/callback_section';
+@import './blocks/advantages';
+@import './blocks/header';
+@import './blocks/price';
+@import './blocks/contacts';
+@import './blocks/banner';

@@ -1,0 +1,66 @@
+.callback-section__main {
+    background-color: $main-color;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/assets/images/background-image.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+
+    h2 {
+        @include h2; 
+        color: #FFE70D;
+        text-align: center;
+        max-width: 657px;
+        margin-top: 84px;
+
+        @media (max-width: $mobile) {
+            margin-top: 40px;
+        }
+    }
+}
+
+.callback-section__form {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    padding: 50px 50px 40px;
+    padding-bottom: 39px;
+    margin-bottom: 81px;
+    border-radius: 6px;
+
+    &-item {
+        width: 100%;
+        margin-bottom: 15px;
+
+        input {
+            @include input;
+            width: inherit;
+        }
+    }
+
+}
+
+.callback-section__btn {
+    width: 100%;
+    @include blueButton;
+}
+
+.callback-section__subtitle {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+.callback-section__agreement {
+    color: #737373;
+    font-size: 12px;
+    margin-top: 20px;
+    line-height: 150%;
+}

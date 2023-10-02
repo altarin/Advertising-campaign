@@ -1,0 +1,93 @@
+@mixin container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+} 
+@mixin h2 {
+    font-weight: 700;
+    font-size: 34px;
+    text-transform: uppercase;
+    line-height: 130%;
+
+    @media (max-width: $mobile-large) {
+        font-size: 28px;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 22px;
+    }
+}
+
+@mixin smallUppercaseTitle {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+@mixin button_order {
+    background: #FFE70D;
+    border-radius: 6px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    color: #000;
+    transition: background-color #{$base-transition}, color #{$base-transition};
+    cursor: pointer;
+
+    &:hover {
+        background: #FFFFFF;
+        color: #000;
+    }
+}
+
+
+@mixin smallGrayText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $gray-middle;
+}
+
+@mixin dividingLine {
+    content: "";
+    width: 290px;
+    display: block;
+    background-color: #B7B7B7;
+    height: 1px;
+    position: absolute;
+}
+
+@mixin input {
+    height: 48px;
+    border: 1px solid #CECECE;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #737373;
+}
+
+@mixin blueButton($isHovered: false) {
+    background-color: $main-color;
+    height: 48px;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 600;
+    transition: background-color #{$base-transition}, color #{$base-transition};
+    cursor: pointer;
+
+    @if isHovered == true {
+        &:hover {
+            background-color: $yellow-color;
+            color: #000;
+        }
+    }
+}
